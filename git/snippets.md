@@ -20,4 +20,5 @@ git add README
 ```
 ```
 git commit -m "soy un commit"
+git commit --allow-empty-message -m ""
 ```
