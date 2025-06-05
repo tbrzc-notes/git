@@ -5,9 +5,14 @@ git config --global user.name "tbrzc"
 git config --global user.email javillabonmo@gmail.com
 git config --global core.editor "'C:/Program Files/Neovim/bin/nvim.exe'"
 git config --global init.defaultBranch main
+git config --global core.eol lf
+git add --renormalize . // si se cambia a lf
 ```
-```
+```sh
 git init
+git remote -v 
+git checkout -b main # -b → Crea una nueva rama antes de cambiar a ella.
+git remote add origin https://github.com/tu-usuario/NOMBRE_REPO.git
 ```
 - Clonar con otro nombre, un proyecto
 ```
