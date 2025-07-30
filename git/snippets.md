@@ -43,3 +43,40 @@ gh repo create tbrzc-notes/NOMBRE_REPO --private --add-readme
 gh repo clone ORGANIZACION/NOMBRE_REPO
 gh repo list tbrzc-notes # listar los repos de la organizacion
 ```
+
+## delta
+```sh
+git config --global core.pager delta
+git config --global interactive.diffFilter 'delta --color-only'
+git config --global delta.navigate true
+git config --global merge.conflictStyle zdiff3
+```
+
+
+```c
+git add .
+git add file.txt
+
+git commit -m ""
+git log // ver todo el historial de commits
+```
+
+```c
+# Hiciste cambios en varios archivos, aún sin commit
+git status
+# output: modified: archivo1.cs, new file: archivo2.txt
+
+# Guardar los cambios sin commit
+git stash -u  // incluye archivos sin agregar (untracked)
+
+# Cambiar de rama para arreglar un bug urgente
+git checkout main
+# Arreglas y haces commit en otra rama...
+
+# Volver a tu rama de trabajo
+git checkout feature/nueva-funcionalidad
+
+# Recuperar los cambios
+git stash pop
+
+```
