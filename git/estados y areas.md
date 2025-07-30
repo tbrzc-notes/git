@@ -9,4 +9,4 @@
 - <mark style="background: #FF5582A6;">working directory</mark>: es una copia de una version del projecto, los archivos se sacan de la base de datos comprimida en el directorio .git
 - <mark style="background: #ADCCFFA6;">staging area</mark>: se encuentra en el directorio .git
 
-![[Pasted image 20240518131119.webp]]
+![[Pasted image 20240518131119.webp|543x309]]
